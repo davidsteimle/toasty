@@ -14,7 +14,8 @@ function New-ToastImage{
     param(
         [string]$ImageBase64
     )
-    $ImageFile = Join-Path $env:TEMP -ChildPath 'usps.png'
+    #$ImageFile = Join-Path $env:TEMP -ChildPath 'usps.png'
+    $ImageFile = New-TemporaryFile | Select-Object -ExpandProperty FullName
     [byte[]]$Bytes = [convert]::FromBase64String($ImageBase64)
     [System.IO.File]::WriteAllBytes($ImageFile,$Bytes)
     $ImageFile
