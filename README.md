@@ -2,7 +2,9 @@
 
 My initial purpose was to alert users that their system had been updated to a newer version of Windows. The inclusion of the image was for branding. Limiting the number of files was important, so I am using an image converted to Base64.
 
-![Animation of the Toast message](toasty.gif)
+| ![Animation of the Toast message](toasty.gif) |
+| :---: |
+| _A mockup of the Toast on my system._ |
 
 ## Image Conversion
 
